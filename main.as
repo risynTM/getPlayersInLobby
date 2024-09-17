@@ -14,6 +14,7 @@ void WriteFile() {
    IO::CreateFolder(folderLocation);
    auto filename = Text::Format(folderLocation + "/%d_players.json", Time::Stamp);
    Json::ToFile(filename,json);
+   Notify("Exported to " + filename);
 }
 
 void RenderMenuMain(){
