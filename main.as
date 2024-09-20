@@ -27,6 +27,10 @@ void RenderMenu()
    }
 }
 
+void Notify(const string &in msg) {
+    UI::ShowNotification(Meta::ExecutingPlugin().Name, msg);
+    trace("Notified: " + msg);
+}
  
 MwSArray<CGameNetPlayerInfo@> GetPlayers()
 {
